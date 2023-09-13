@@ -4,22 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
-  <title>Modelo de Cajas Tailwind</title>
+  <title>Modelo de Cajas Grid Tailwind</title>
 </head>
 <body>
-    <div class="mx-auto bg-orange-400 max-w-3xl container">
-        <header class="h-10 bg-[#ff3b2d]">
+    <div class="grid grid-cols-4 mx-auto bg-orange-400 max-w-3xl container">
+        <header class="col-span-4 h-10 bg-[#ff3b2d]">
             El Encabezado
         </header>
-        <section class="flex bg-red-400">
-            <nav class="h-[101px]  w-1/4 bg-green-500">
-                Opciones
-            </nav>
-            <article class=" w-3/4 bg-purple-600">
-                Aca el contenido de la seccion
-            </article>
-        </section>
-        <footer class=" bg-pink-400">
+       
+        <nav class="h-[101px] bg-green-500">
+            Opciones
+        </nav>
+        <article class=" col-span-3 bg-purple-600">
+            Aca el contenido de la seccion
+        </article>
+    
+        <footer class="col-span-4 bg-pink-400">
             Pie de pagina
         </footer>
     </div>
